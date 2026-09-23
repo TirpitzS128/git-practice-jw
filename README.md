@@ -9,8 +9,18 @@ I find the article interesting because it connects everyday engineering choices,
 The ideas are useful beyond web services. Separating environment-specific configuration and making processes reproducible can help almost any software project become easier to test, run, and hand off to another developer.
 
 
+
 ## Comment from Yusef Moustafa
 
 I like this pick because Twelve-Factor is one of those things that sounds obvious once you have been burned by not following it, but is easy to skip when you are just trying to get something running. The point about keeping config out of code stood out to me the most since I have seen how quickly a project gets fragile once an API key or a database URL is hardcoded somewhere and then has to be hunted down later.
 
 The point about treating backing services as replaceable resources also connects well to something I ran into during my internship, where swapping out one auditing tool for another was much easier because the team had not tightly coupled the code to a specific vendor. It made me realize these principles are less about following a checklist and more about designing for change from the start.
+
+
+
+## Comment from Isha Zaheer
+
+The point about keeping development and production environments similar stood out to me. A feature can work perfectly on one developer’s computer but fail after deployment if the environments behave differently. I like how the Twelve-Factor approach treats that consistency as part of building reliable software, rather than something to figure out only when a deployment fails.
+
+
+
